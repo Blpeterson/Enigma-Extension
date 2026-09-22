@@ -26,8 +26,15 @@ An extension cannot protect data from a compromised browser, malicious extension
 
 ## Development
 
+Requirements: Node.js 20 or newer, npm, and a Chromium-based browser such as
+Google Chrome or Microsoft Edge.
+
+Clone the repository, install the locked dependencies, and run the checks:
+
 ```powershell
-npm install
+git clone https://github.com/Blpeterson/browser-extension.git
+cd browser-extension
+npm ci
 npm run build
 npm test
 npm run smoke
@@ -74,3 +81,7 @@ Google's current packaging and submission guidance is available in [Prepare your
 - Optional-site decryption begins after the user grants access and may require a page reload on pages that reject script injection.
 - File processing is in memory and is limited to 40 MiB per file. Files are base64-encoded for Chrome extension messaging, so this leaves headroom below Chrome's 64 MiB message limit.
 - Firefox support is not included in this Chromium-first release.
+
+## License
+
+Released under the [MIT License](LICENSE). Copyright (c) 2026 Bracken Peterson.
