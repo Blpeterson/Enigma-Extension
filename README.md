@@ -82,6 +82,15 @@ Google's current packaging and submission guidance is available in [Prepare your
 - File processing is in memory and is limited to 40 MiB per file. Files are base64-encoded for Chrome extension messaging, so this leaves headroom below Chrome's 64 MiB message limit.
 - Firefox support is not included in this Chromium-first release.
 
+## Easy Install Instructions
+
+- Download the Contents of the dist/ Folder. 
+- Place the Contents into a Folder where you want to Keep it.
+- Inside of the 'chrome://extensions/' webpage on Chrome, switch on the developer mode.
+- Select the Load Unpacked button from the top left of the page
+- This should open the file browser, and you should select the folder where you downloaded the contents of dist/
+- Open the Browser extension in the Chrome 3 Dots menu, or the puzzle piece in the top right of your browser.
+
 ## License
 
 Released under the [MIT License](LICENSE). Copyright (c) 2026 Bracken Peterson.
