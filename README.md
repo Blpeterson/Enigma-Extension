@@ -1,4 +1,4 @@
-# Drive Vault Browser Extension
+# Enigma Browser Extension
 
 A Chromium Manifest V3 extension for local `GVDV1` encryption and decryption. It works without Google APIs or OAuth.
 
