@@ -1,0 +1,30 @@
+{
+  "name": "drive-vault-browser-extension",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc --noEmit && vite build && npm run build:scripts",
+    "build:scripts": "vite build --config vite.background.config.ts && vite build --config vite.content.config.ts",
+    "package:store": "npm run build && powershell -NoProfile -ExecutionPolicy Bypass -File scripts/package-extension.ps1",
+    "test": "vitest run",
+    "check": "tsc --noEmit && vitest run",
+    "smoke": "node scripts/smoke-extension.mjs"
+  },
+  "dependencies": {
+    "@noble/ciphers": "^2.0.1",
+    "hash-wasm": "^4.12.0",
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.1.31",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "typescript": "^5.5.4",
+    "vite": "^8.3.0",
+    "vitest": "^5.0.1"
+  }
+}
