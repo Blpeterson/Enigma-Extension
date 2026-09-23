@@ -32,7 +32,7 @@ Google Chrome or Microsoft Edge.
 Clone the repository, install the locked dependencies, and run the checks:
 
 ```powershell
-git clone https://github.com/Blpeterson/browser-extension.git
+git clone https://github.com/Blpeterson/Enigma-Extension.git
 cd browser-extension
 npm ci
 npm run build
